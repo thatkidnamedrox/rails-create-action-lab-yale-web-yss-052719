@@ -12,6 +12,8 @@ class StudentsController < ApplicationController
   end
 
   def create
+    @student = Student.new
+    redirect_to student_path(@student)
   end
 
 end
